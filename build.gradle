@@ -12,7 +12,7 @@
             classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         }
     }
-
+    
     apply plugin: 'java'
     apply plugin: 'eclipse'
     apply plugin: 'org.springframework.boot'
@@ -28,6 +28,7 @@
 
     dependencies {
         compile('org.springframework.boot:spring-boot-starter-web')
+        compile('org.projectlombok:lombok')
         testCompile('org.springframework.boot:spring-boot-starter-test')
     }
 
